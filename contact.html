@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactpagina - Kenneth Verresen - Student systeem- en netwerkbeheer</title>
+    <meta name="description" content="Contactpagina van Kenneth Verresen, student graduaat systeem-en netwerkbeheer aan AP Hogeschool te Antwerpen. Aarzel niet om contact op te nemen.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="w-full px-4 py-3 flex flex-wrap items-center justify-between border-b
+    border-blue-700 bg-[url(../assets/images/doodle-background-yellow.png)] bg-cover bg-center">
+        <a href="./index.html"><img src="./assets/images/portfolio-logo-systeem-en-netwerkbeheer.png" alt="logo systeem en netwerkbeheer" width="100" class="rounded-full"></a>
+        <input type="checkbox" id="menu-knop" class="peer sr-only" />
+        <label
+            for="menu-knop"
+            class="cursor-pointer rounded-lg border border-blue-500 text-blue-900 bg-yellow-100 px-3 py-2 peer-focusvisible:outline-2 md:hidden"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu preview-icon"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg><span class="sr-only">menu</span>
+            </label>
+        <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+            <ul class="flex flex-col md:flex-row bg-blue-200 rounded-lg md:gap-2">
+                <li><a href="./index.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-yellow-50">Home</a></li>
+                <li><a href="./portfolio.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-yellow-50">Portfolio</a></li>
+                <li><a href="./project.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-yellow-50">Project</a></li>
+                <li><a href="./contact.html" aria-current="page" class="block px-3 py-2 rounded-lg border border-blue-500 bg-yellow-100 text-blue-800 font-semibold">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 my-8">
+        <main class="md:col-span-2">
+            <h1 class="text-3xl font-bold tracking-tight">Contactgegevens</h1>
+            <section>
+                <article class="my-4">
+                    <p class="max-w-2xl leading-relaxed my-4">
+                    Gelieve hieronder uw gegevens achter te laten en uw vraag in te vullen. Ik tracht spoedig contact met u op te nemen.</p>
+                    <h2 class="text-2xl font-bold tracking-tight py-4">Contact opnemen</h2>
+                    <form action="#" method="get" class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="voornaam" class="block font-medium">Voornaam <span class="text-red-700"
+                            aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="voornaam" name="naam" autocomplete="name" required
+                            class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3
+                            py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                        </div>
+                        <div>
+                            <label for="achternaam" class="block font-medium">Achternaam <span class="text-red-700"
+                            aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="achternaam" name="naam" autocomplete="name" required
+                            class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3
+                            py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                        </div>
+                        <div class="col-span-2">
+                            <label for="mail" class="block font-medium">e-mail <span class="text-red-700" aria-hidden="true">*</span>
+                            </label>
+                            <input type="email" id="mail" name="mail" autocomplete="email" required
+                            aria-describedby="mail-hulp"
+                            class="peer mt-1 w-full rounded-lg border border-gray-400 bg-white
+                            px-3 py-2 user-invalid:border-red-700 focus-visible:outline-2 focus-visible:outline-offset-2
+                            focus-visible:outline-blue-700">
+                            <p id="mail-hulp" class="mt-1 text-sm text-gray-600">Vul een e-mailadres in.</p>
+                            <p class="mt-1 hidden text-sm font-semibold text-red-700 peer-userinvalid:block">Vul uw e-mailadres correct in.</p>
+                        </div>
+                        <div class="col-span-2 md:col-span-1">
+                            <label for="onderwerp" class="block font-medium">Onderwerp <span class="text-red-700"
+                            aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="onderwerp" name="naam" autocomplete="name" required
+                            class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3
+                            py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                        </div>
+                        <div class="col-span-2">
+                            <label for="inhoud" class="block font-medium">Typ hier de inhoud van je vraag <span class="text-red-700" aria-hidden="true">*</span>
+                            </label>
+                            <textarea id="inhoud" name="inhoud" rows="5" required minlength="10"
+                            aria-describedby="inhoud-hulp"
+                            class="peer mt-1 w-full rounded-lg border border-gray-400 bg-white
+                            px-3 py-2 user-invalid:border-red-700 focus-visible:outline-2 focus-visible:outline-offset-2
+                            focus-visible:outline-blue-700">
+                            </textarea>
+                            <p id="inhoud-hulp" class="mt-1 text-sm text-gray-600">Uw bericht moet minstens 10 tekens bevatten.</p>
+                            <p class="mt-1 hidden text-sm font-semibold text-red-700 peer-userinvalid:block">Uw bericht is te kort. Het moet minstens 10 tekens bevatten.
+                            </p>
+                            <button type="submit"
+                            class="rounded-lg bg-blue-700 px-5 py-2 my-2 font-semibold text-white
+                            hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focusvisible:outline-blue-700">Verstuur
+                            </button>
+                        </div>
+                    </form>        
+                </article>
+            </section>
+        </main>
+        <aside class="border border-blue-500 bg-gray-200 bg-blend-multiply bg-[url(../assets/images/doodle-background-blue.png)] bg-cover bg-center rounded-lg flex flex-col items-center gap-2 col-span-1 p-8">
+            <h2 class="text-2xl text-center font-bold">Over mij<span class="sr-only">Kenneth Verresen student systeem- en netwerkbeheer</span></h2>
+            
+            <img src="./assets/images/foto-kenneth-verresen.jpg" alt="foto Kenneth" width="300" class="rounded-lg">
+            <h3 class="text-center text-lg font-semibold my-4">
+            Mijn informatie</h3>
+            <ul class="flex flex-col items-center gap-4 text-center">
+                <li class="inline-flex items-center hover:bg-yellow-200 rounded-lg hover:text-blue-700 gap-2 px-3 py-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    aria-hidden="true"
+                    class="lucide lucide-map-pin-house preview-icon">
+                    <path d="M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z"/>
+                    <path d="M18 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 .601.2"/>
+                    <path d="M18 22v-3"/><circle cx="10" cy="10" r="3"/></svg>Hoevenen<br> Antwerpen
+                </li>
+                <li class="inline-flex items-center hover:bg-yellow-200 rounded-lg hover:text-blue-700 gap-2 px-3 py-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-phone preview-icon"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>04 58 43 64 96
+                </li>
+                <li><a href="mailto:kenneth.verresen@student.ap.be" class="hover:text-blue-700 hover:bg-yellow-200 inline-flex items-center rounded-lg gap-2 px-3 py-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail preview-icon" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>E-mail</a>
+                </li>
+            </ul>   
+        </aside>
+    </div>
+    <footer class="w-full border-t border-blue-700 bg-[url(../assets/images/doodle-background-yellow.png)] bg-cover bg-center py-10 md:flex justify-between">
+        <p class="px-2">&#169;&nbsp;2026 Kenneth Verresen</p>  
+        <p class="px-2">kenneth.verresen@student.ap.be</p>
+    </footer>
+</body>
+</html>
